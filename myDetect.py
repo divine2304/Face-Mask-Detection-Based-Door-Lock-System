@@ -4,16 +4,16 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 from imutils.video import VideoStream
 import numpy as np
+from keras import models
 import imutils
-import time
+# import time
 import cv2
 import os
-import time 
-#For arduino connection
+import time
+# For arduino connection
 import serial
-
-#For arduino connection
-arduino = serial.Serial('COM3', 9600)
+# For arduino connection
+arduino = serial.Serial('COM6', 9600)
                              
 lowConfidence = 0.75
 
@@ -46,7 +46,7 @@ def detectAndPredictMask(frame, faceNet, maskNet):
 prototxtPath = r"deploy.prototxt"
 weightsPath = r"res10_300x300_ssd_iter_140000.caffemodel"
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
-maskNet = load_model("mask_detector.model")
+maskNet = models.load_model("mask_detector.model")
 vs = VideoStream(src=0).start()
 while True:
     frame = vs.read()
