@@ -2,9 +2,12 @@
 Face Mask Detection Based Door Lock System.
 Forked from Tamanna Nazmin's Repository for reference
 
+![Block Diagram](https://user-images.githubusercontent.com/87369397/183247469-166b08fa-60ac-4cf4-9e8a-19a9c15b0de7.png)
 
 # Project Description: 
 For building face mask based door system, We used machine learning model using Keras, Tensorflow library in python language. After building model we used OpenCV to detect whether a person is wearing a mask or not in real time. This system contains mainly three devices. They are: servo, camera and Arduino Uno. We used arduino Uno to control servo and camera. If someone appears in front of the entrance wearing a mask properly, covering both their mouth and nose, then they will be let in. But if someone appears without a mask then they will be denied entry. This versatile system could be used with variety of entrances with different locking system. the image of demo working project is given below:
+
+![image](https://user-images.githubusercontent.com/87369397/183247387-c5cbab9e-5330-4d79-97ac-cf341207eb09.png)
 
 # How to run the project
 
@@ -25,12 +28,11 @@ If you want to use Arduino then first, you have to run and compile 'msdCode.ino'
 Remember you have to connect your Arduino, servo on a respective port before running the code. 
 the connection is given below:
 
-
 #### For Servo 
+
 You have to connect the servo with Arduino digital pin 6.
 Connect servo ground with Arduino digital pin ground.
 Connect servo power pin with Arduino digital pin 5v.
-
 
 # Language: 
 Python and Arduino.
