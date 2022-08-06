@@ -27,9 +27,9 @@ the connection is given below:
 
 
 #### For Servo 
-###### You have to connect the servo with Arduino digital pin 6
-######Connect servo ground with Arduino digital pin ground
-######Connect servo power pin with Arduino digital pin 5v
+You have to connect the servo with Arduino digital pin 6.
+Connect servo ground with Arduino digital pin ground.
+Connect servo power pin with Arduino digital pin 5v.
 
 
 # Language: 
